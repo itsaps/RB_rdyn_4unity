@@ -1,10 +1,10 @@
 # RB_rdyn_4unity
 
-Implementation of exact rotation dynamics for Unity
+Implementation of exact rotation dynamics for rigid bodies in Unity
 
-## Unity Physix is wrong
+## Unity physics is wrong
 
-When it comes to simulating rotations there are some unintuitiv behaviors in the real world. 
+When it comes to simulating rotations there are some unintuitiv behaviors in the real world.  
 [Youtube Video from Veritasium](https://youtu.be/1VPfZ_XzisU)
 
 There are 2 things to consider for an object floating undisturbed in free space: 
@@ -46,7 +46,7 @@ On a gameobject attach the script `source/FreeRotor.cs`
 Set the principal inertia components to something > 0. 
 Set the angular velocity components to something > 0.
 
-
+![settings](/doc/settings.png)
 
 Maybe try to avoid unrealistic inertia settings. 
 For a rod-like shape you could use (1,10,10.1).
